@@ -1,0 +1,408 @@
+doc_types:
+  W2Form:
+
+    threshold: 55
+
+    match_keywords:
+
+      - "w2"
+
+      - "form w2"
+
+      - "wage and tax statement"
+
+      - "wages, tips, other compensation"
+
+      - "employee's social security number"
+
+      - "employer identification number"
+
+      - "medicare wages and tips"
+
+      - "federal income tax withheld"
+      - "Internal Revenue service"
+      - "negligence penalty"
+
+  SocialSecurityAwardLetter:
+
+    threshold: 80
+
+    match_keywords:
+
+      - "social security administration"
+
+      - "supplemental security income"
+
+      #- "ssi"
+
+      - "bnc number"
+
+      - "we are writing to tell you"
+
+      - "important information"
+
+      - "you may be eligible for additional SSI benefits"
+
+      - "Who Qualifies for Additional Benefits"
+
+  BorrowerAuthorization:
+
+    threshold: 40
+
+    match_keywords:
+
+      - "borrower's certification & authorization"
+
+      - "authorization to release information"
+
+      - "borrower signature"
+
+      - "co borrower signature"
+
+      - "co applicant signature"
+
+      - "borrower signature date"
+
+      - "co borrower signature date"
+
+      - "co applicant signature date"
+
+      - "signature addendum"
+
+      - "see 'signature addendum' attached hereto,and made a part hereof"
+ 
+  Paystub:
+
+    threshold: 60
+
+    match_keywords:
+
+      - "pay statement"
+
+      - "paystub"
+
+      - "earnings description"
+
+      - "gross wages"
+
+      - "net pay"
+
+      - "deductions"
+
+      - "payroll period"
+
+      - "taxable wages"
+
+      - "year to date"
+
+      - "employer name"
+
+      - "employee id"
+
+      - "withholding"
+
+      - "Pay Details"
+
+      - "Paid Time Off"
+
+      - "Pay summary"
+ 
+  DriverLicense:
+
+    threshold: 80
+
+    match_keywords:
+
+      - "class"
+
+      - "dl number"
+
+      - "date of birth"
+
+      - "first name of borrower"
+
+      - "middle name of borrower"
+
+      - "last name of borrower"
+
+      - "expiry date"
+
+      - "issue date"
+
+      - "sex"
+
+      - "current address"
+
+
+  FloodCertificate:
+
+    threshold: 70
+
+    match_keywords:
+
+      - "standard flood hazard determination form"
+
+      - "department of homeland security"
+
+      - "federal flood insurance availability"
+
+      - "federal emergency management agency"
+
+      - "subject property address"
+
+      - "determination"
+
+      - "comments"
+
+      - "preparer's information"
+
+      - "national flood insurance program"
+
+      - "county name"
+
+      - "nfip map number"
+
+      - "flood zone code"
+      - "flood certificate date"
+
+      - "this flood determination isprovided to the lender pursuant to the flood disaster protection act and for no other purpose"
+
+  HazardInsuranceBinder:
+    threshold: 60
+    match_keywords:
+      - "Evidence of Insurance"
+      - "hazard insurance company name"
+      - "hazard insurance company address"
+      - "named insured"
+      - "premium amount"
+      - "property address"
+      - "coverage a"
+      - "replacement coverage"
+      - "replacement cost percent"
+      - "cash value"
+      - "Insured and location information"
+      - "Mortgage information"
+      - "Policy coverages and premium"
+      - "Policy deductibles"
+
+  PurchaseContractAddendum:
+    threshold: 40
+    match_keywords: 
+      - "west Michigan regional purchase agreement"
+
+      - "contract date"
+
+      - "buyer name"
+
+      - "seller name"
+
+      - "property address"
+
+      - "purchase price"
+
+      - "initial deposit"
+
+      - "parcel number"
+
+      - "legal description"
+
+      - "property identifier"
+
+      - "other fee"
+
+      - "loan amount"
+
+      - "loan interest rate"
+
+      - "loan type"
+
+      - "seller credit"
+
+      - "buydown fees"
+
+      - "inspection fees"
+
+      - "closing of escrow date"
+
+      - "expiration date"
+
+      - "inspection"
+
+      - "list of attached addendum and disclosures"
+
+      - "counter offer"
+
+      - "possession"
+
+      - "list of repairs"
+
+      - "list of contingencies"
+
+      - "fixtures and personal property"
+
+      - "buyer signature"
+
+      - "buyer signature date"
+
+      - "seller signature"
+
+      - "seller signature date"
+
+      - "buyer initial"
+
+      - "seller initial"
+
+      - "seller agent name"
+
+      - "seller agent address"
+
+      - "seller agent license number"
+
+      - "seller agent phone number"
+
+      - "seller agent email"
+
+      - "buyer agent name"
+
+      - "buyer agent address"
+
+      - "buyer agent license number"
+
+      - "buyer agent phone number"
+
+      - "buyer agent email"
+
+      - "seller agent company name"
+
+      - "seller agent company address"
+
+      - "seller agent company license"
+
+      - "buyer agent company address"
+
+      - "buyer agent company name"
+
+      - "buyer agent company license"
+
+      - "seller agent signature"
+
+      - "buyer agent signature"
+
+      - "for sale by owner"
+
+      - "title company name"
+
+      - "fha amendatory clause paragraph"
+
+      - "entire aggrement"
+
+      - "appraised value amount" 
+
+      - "effective date"
+
+      - "agency disclosure"
+
+      - "seller's disclosure statement"
+
+      - "lead-based paint addendum"
+
+      - "property description"
+
+      - "seller concessions"
+
+      - "contingencies"
+
+      - "fixtures and improvements"
+
+      - "heating and cooking fuels"
+
+      - "Assessments"
+
+      - "Property taxes"
+
+      - "well/septic"
+
+      - "Inspections and investigations"
+
+      - "Municipal compliances"
+
+      - "Title insurance"
+
+      - "Property survey"
+
+      - "Home Protection Plan"
+
+      - "Prorations"
+
+      - "Closing"
+
+      - "Pre-Closing Walk-Through"
+
+      - "Possession"
+
+      - "Earnest Money Deposit"
+
+      - "Professional Advice" 
+
+      - "Disclosure of Information"  
+
+      - "Other Provisions"
+
+      - "Mergers and Integrations"
+
+      - "Fax/Electronic Distribution and Electronic Signatures"
+
+      - "Wire Fraud"
+
+      - "Buyer Approval and Acknowledgment"
+
+      - "Seller Response"
+
+      - "Certification of Previous Disclosure Statement"
+
+      - "Notice to Seller"
+
+      - "Listing Office Address"
+
+      - "Seller Approval and Acknowledgment"
+
+      - "Buyer Receipt/Acceptance"
+
+      - "Seller Receipt"
+ 
+  Tax Certificate:
+    threshold: 60
+    match_keywords:
+
+      - "annual secured property tax information statement"
+
+      - "secured property tax"
+
+      - "details of taxes due"
+
+      - "treasure and tax collector"
+
+      - "how your property tax bill is created and what office to contact for additional information"
+
+      - "secured property tax programs and services"
+
+      - "For information about property tax assistance and relief programs,"
+
+  EMD:
+    threshold: 50
+    match_keywords:
+
+      - "pay to the order of"
+
+  GIFT:
+    threshold: 80
+    match_keywords:
+      - "to whom it may concern"
+      - "this letter confirms that the undersigned is making a financial gift of"
+      - "for use towards the purchase of the property located at"
+      - "the donor is an immediate family member"
+      - "these funds are a genuine gift from the donors as such are not required to be repaid at anytime"
+      - "no part of the financial gift is being provided by any third party having any interest direct or indirect in the sale of"
+
+
+ 
