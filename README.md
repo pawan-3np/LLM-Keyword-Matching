@@ -1,7 +1,5 @@
 # LLM Key Extractor
 
-This project extracts or processes keywords defined in `rule.yaml` using a Python script.
-
 ---
 
 ## 🚀 Setup Instructions
