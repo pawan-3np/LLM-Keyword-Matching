@@ -404,5 +404,43 @@ doc_types:
       - "these funds are a genuine gift from the donors as such are not required to be repaid at anytime"
       - "no part of the financial gift is being provided by any third party having any interest direct or indirect in the sale of"
 
+  payoff_date:
+      display_name: "Payoff Date"
+      synonyms:
+        - "Statement Date"
+        - "Payoff Statement Date"
+        - "Effective Date"
+        - "Dated"
+      pattern: "\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}"
+      notes:
+        - It is the date the payoff document was issued or became effective.
+        - Extract always in MM/DD/YYYY format.
+        - Commonly appears beside or below the label **'Statement Date'**.
+        - Strictly do not extract dates showing when funds must be paid, received, or due.
+        - Extract only the **effective or issue date** of the payoff statement.
+        - Prefer dates labeled **'Effective Date'**, **'Payoff Date'**, **'Statement Date'**, or **'As Of Date'** located near the top of the document.
+      exclusion_anchors:
+        - "Due Date"
+        - "Total amount due for Payoff is"
+        - "Funds must be received by"
+
+    interest_through_date:
+      display_name: "Payoff Good Through Date"
+      synonyms:
+        - "Interest Through"
+        - "Interest Till"
+        - "Interest From"
+        - "Interest Calculated Through"
+        - "Interest Period End"
+      pattern: "\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}"
+      notes: |
+        - If the Amount Due is Not Received By the Date 'MM/DD/YYYY', additional interest may be added at rate of 'x' per day or per year . Return the date 'MM/DD/YYYY'
+        - Date through which interest charges have been calculated based on the loan's interest rate.
+        - This is the *'Payoff Good Through Date'*, meaning the payoff amount is valid up to this date.
+        - If the text includes phrases like *"If the total amount due is not received by <date>", that date represents the **Interest Through Date*.
+        - Choose the date that indicates the *final day up to which the quoted payoff amount or interest is valid*.
+        - Do *not* select dates related to payment history, origination, or unrelated due dates.    
+
+
 
  
